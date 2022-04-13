@@ -42,8 +42,16 @@ if (matchMedia("screen and (min-width: 1024px)").matches) {
 /*전체메뉴*/
 
 $('#toggle').click(function() {
-  $(this).toggleClass('active');
-  $('#gnb').toggleClass('open');
+   $(this).toggleClass('active');
+   $('#gnb').toggleClass('open');
+  });
+  
+/*$('.dropdown').hover(function() {
+   $('#logo').toggleClass('logo_on');
+  });
 
-  $('body').toggleClass('scrollNon');
-});
+$('.dropdown').hover(function() {
+   $('aside.util').toggleClass('util_on');
+  });*/
+
+
