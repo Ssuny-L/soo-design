@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="{{$template}}/img/hblock/design/menu_02/css/style.css">
+<link rel="stylesheet" href="{{$template}}/img/hblock/design/menu_02/css/menu.css">
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<div id="toparea">
+  <!--GNB-->
+  <div class="gnb dropdown" id="gnb">
+    <div class="logo" id="logo"><a href="{{$template}}/">
+      <img src="{{$template}}/img/hblock/design/menu_02/img/logo.png" /></a>
+    </div>
+    <ul>
+      <li class="menu">
+        <div class="depth1"><a href="{{$template}}/company/company_1.php?sub=01&tit=01" class="first">회사소개</a></div>
+        <div class="depth2">
+          <ul>
+            <li><a href="{{$template}}/company/company_1.php?tit=01&sub=01">회사소개</a></li>
+            <li><a href="{{$template}}/company/company_2.php?tit=01&sub=02">기업이념</a></li>
+            <li><a href="{{$template}}/company/company_4.php?tit=01&sub=04">공감경영</a></li>
+            <li><a href="{{$template}}/company/company_5.php?tit=01&sub=05">CI/BI</a></li>
+            <li><a href="{{$template}}/company/company_3.php?tit=01&sub=03">찾아오시는 길</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu">
+        <div class="depth1 child_none"><a href="{{$template}}/business/business_1.php?tit=02&sub=01">공정설비</a></div>
+      </li>
+      <li class="menu">
+        <div class="depth1">
+          <a href="{{$template}}/product/prod_01.php?tit=03&sub=01&com_board_category_code=c1">주요제품</a></div>
+        <div class="depth2">
+          <ul>
+            <li><a href='{{$template}}/product/prod_01.php?tit=03&sub=01&com_board_category_code=c1'>야채가공품</a></li>
+            <li><a href='{{$template}}/product/prod_02.php?tit=03&sub=01&com_board_category_code=c2'>김치류</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu">
+        <div class="depth1"><a href="{{$template}}/customer/customer_1.php?tit=05&sub=01">커뮤니티</a></div>
+        <div class="depth2">
+          <ul>
+            <li><a href="{{$template}}/customer/customer_1.php?tit=05&sub=01">공지사항</a></li>
+            <li><a href="{{$template}}/qna/qna_1.php?tit=04&sub=01">문의하기</a></li>
+          </ul>
+        </div>
+      </li>
+      <!-- 쇼핑몰 숨기기 [ssun:20220315]
+      <li class="menu">
+        <div class="depth1"><a href="{{$template}}/mall/mall1.php?tit=07&sub=01?topmenu=p&mode=list&cate_code=CA100001" >쇼핑몰</a></div>
+        <div class=" depth2">
+            <ul>
+              {{$cafe_ecshop_ec_category}}
+            </ul>
+        </div>
+      </li>
+       //-->
+    </ul>
+  </div>
+  <!--mobile menu open-->
+  <div class="button_container" id="toggle">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+    <div class="txt">MENU</div>
+  </div>
+  <script src="{{$template}}/img/hblock/design/menu_02/js/menu.js"></script>
+</div>
+</div>
