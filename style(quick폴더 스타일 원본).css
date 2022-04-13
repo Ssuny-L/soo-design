@@ -7,13 +7,8 @@ border:1px solid #333; background-color:#FFF; padding:3px; font-size:13px;  bord
 #quick .tableLayer ul li a:hover{background-color:rgba(237,28,36,.8); }
 #quick .tableLayer ul li.ico1 a{background-image:url("../img/quick1.png");}
 #quick .tableLayer ul li.ico2 a{background-image:url("../img/quick2.png");}
+#quick .tableLayer ul li.ico3 a{background-image:url("../img/quick3.png");}
 #quick .tableLayer ul li.ico4 a{background-image:url("../img/quick4.png");}
-/* (쇼핑몰 운영 X --> 스마트스토어 연결)로 인한 수정 [ssun:20220317] */
-#quick .tableLayer ul li.ico3 a{
-  background-image:url("../img/naver_store.png");
-  background-size: contain;
-}
-#quick .tableLayer ul li.ico3 a:hover{background-color:rgba(25,206,96,1); }
 
 #quick .overLayer:before {  content: "";  width: 0px;  height: 0px;  position: absolute;  border-left: 6px solid #333; 
 border-right: 6px solid transparent; border-top: 6px solid transparent; border-bottom: 6px solid transparent; right: -12px; top:7px;}
