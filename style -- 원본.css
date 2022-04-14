@@ -1,0 +1,81 @@
+#toparea {width:100%; background:none;}
+#top {  border-bottom:0px solid #343848;   position:relative;   }
+#topBox { margin:0 auto; max-width:1100px !important;  position:relative;}
+div.top_mask {width:100%; }
+#toparea {width:100%; }
+aside.util {background-color:#f0f0f0; width:100%; margin:0 auto; font-size:12px; display:block;   z-index: 15;border-bottom:0px solid #dfdfdf; }
+aside.util div.util_Area { color:#888; right:0px; width:1100px;   margin:0 auto;  text-align:right; padding:6px 0px 0px 0; height:30px; box-sizing:border-box; }
+aside.util div.util_Area a{  padding:0px 10px 0 10px; border-left:0px solid #888;  }
+aside.util div.util_Area a.first{ border-left:0px; }
+
+#header div.logo { position:absolute;  top:30px ;  padding:15px 15px;   box-sizing:border-box;   z-index:23 ; }
+.button_container {display:none;}
+
+@media all and (min-width:1024px)  {
+.gnb{ position:absolute; top:30px ;  background-color:rgba(255,255,255,1); left:0; width:100%;  z-index:13;  border-bottom:1px solid rgba(255,255,255,0.3);
+margin:0px auto 0 auto; text-align:center;  }
+.gnb a {}
+.gnb > ul{overflow:hidden; list-style-type:none; width:1100px; padding-left:250px; box-sizing:border-box; margin:0 auto;}
+.gnb .menu{float:left; width:16.66666%; text-align:center;}
+.gnb .menu:first-child{margin:0}
+.gnb .depth1{padding:0; font-size:18px;  font-family:"noto_m"; letter-spacing:-0.3px; text-align:center; margin:0 auto; padding:0; display:block;  line-height:90px; box-sizing:border-box;}
+.gnb .depth2{height:0 ;overflow:hidden;  font-size:14px; border-left:0px solid #353535;  }
+.gnb .menu:first-child .depth2{border-left:0px solid #dfdfdf; }
+.gnb .depth2 ul{ list-style-type:none; padding:0; margin:0; } /*depth2 height -> menu.js */
+.gnb .depth2 ul li{margin-top:15px;}
+.gnb .depth2 ul li:first-child{margin-top:10px}
+.gnb .depth2 ul li a {padding: 4px 20px 4px 20px ; border-radius:5px 5px;}
+.gnb .depth2 ul li a:hover { color:#fff !important; background-color:#5cb531; -webkit-transition: 0.5s;  transition: 0.5s; }
+.gnb:hover {background:rgba(255,255,255,1); color:#333; }
+.gnb:hover a {color:#333;}
+.gnb .menu:hover {background-color:#fff;  }
+.gnb .menu:hover a{  border-bottom:2px solid #5cb531;  padding-bottom:7px;}
+.gnb .menu:hover .depth1 a{color:#5cb531}
+.gnb .menu:hover .depth2 ul li a {border-bottom:0;}
+.gnb:hover .depth2 {}
+
+/*.gnb{ position:absolute; top:30px ; background-color:rgba(255,255,255,1); left:0; width:100%;  z-index:13;  border-bottom:0px solid #dfdfdf;  margin:0px auto 0 auto; text-align:center; transition: all 0.5s ; }
+.gnb a {color:#333;}
+.gnb > ul{overflow:hidden; list-style-type:none; width:1000px; padding-left:250px; box-sizing:border-box; margin:0 auto;}
+.gnb .menu{float:left; width:20%; text-align:center;}
+.gnb .menu:first-child{margin:0}
+.gnb .depth1{padding:0; font-size:17px; font-weight:bold; display:block; padding:32px 0 28px 0; height:90px; box-sizing:border-box;}
+.gnb .depth2{height:0 ;overflow:hidden;  font-size:13px; border-left:0px solid #353535;  }
+.gnb .menu:first-child .depth2{border-left:0px solid #dfdfdf; }
+.gnb .depth2 ul{overflow:hidden; }
+.gnb .depth2 ul li{margin-top:15px;}
+.gnb .depth2 ul li:first-child{margin-top:10px}
+.gnb .depth2 ul li a:hover {text-decoration:underline; color:#fff13c !important; }
+.gnb:hover {background:rgba(255,255,255,1); color:#333; }
+.gnb:hover a {color:#333;}
+.gnb .menu:hover {background-color:#353535;  }
+.gnb .menu:hover a{ color:#fff !important; border-bottom:2px solid #dfdfdf;  padding-bottom:7px;}
+.gnb .menu:hover .depth2 ul li a {border-bottom:0;}
+.gnb:hover .depth2 {}*/
+
+}
+
+
+
+/*---------------------------------------
+  MOBILE RESPONSIVE
+-----------------------------------------*/
+@media (max-width: 1023px) {
+#wrap {max-width:100%; margin:0 auto; position:relative; padding:0; }
+aside.util { display:none; }
+#header div.logo {display:table-cell; vertical-align:middle; position:relative; left:0; top:0; height:70px; padding:0 0 0 5px;   box-sizing:border-box;   z-index:23 ; }
+#header div.logo img {vertical-align: top;}
+.gnb{ display:none; }
+.overlay div.contact {display:none; }
+div.button_container div.txt{display:none;}
+.button_container { display:block;  position: absolute;  }
+.button_container {    top: 20px;  right: 20px; }
+
+@media (max-width: 768px) {
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
+}
