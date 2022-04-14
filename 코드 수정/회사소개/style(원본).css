@@ -1,0 +1,110 @@
+/* 파일업로드 경로 : bizdemo87193/img/hblock/content/intro/css */
+
+
+div.intro {line-height:28px; font-size:15px; overflow: hidden; background-color: #f4f4f4;}
+div.intro div.contL {float:left; width:50%; height: 400px; overflow: hidden;}
+div.intro div.contR {float:right; width:50%; height: 400px; padding: 110px 40px 0;}
+div.intro div.txt {float:left;; width:50%; height: 400px; padding: 110px 40px 0; text-align: right;}
+div.intro div.img {float:right; width:50%; height: 400px; padding: 0; overflow: hidden;}
+div.intro p.strong { font-size: 32px; line-height: 1.3; letter-spacing: -0.5px;}
+div.intro p.txtP { padding-bottom:20px; }
+p.sign {text-align:left;}
+p.sign strong{font-size:26px; font-weight:normal; padding-left:10px;}
+
+div.management p.txtP{font-size: 32px; text-align: center;}
+div.intro div.m_ver{display: none;}
+
+/* 반응형 틀어짐 수정 [ssun:20220318] */
+.introduce {
+  width: 95%;
+  max-width: 1100px;
+  background-color: rgba(245, 245, 245, 1);
+  margin: 0 auto;
+}
+.introduce__wrap {
+  width: 100%;
+  display: flex;
+  justify-content: stretch;
+  flex-wrap: wrap;
+  flex-flow: row;
+  align-items: stretch;
+}
+.introduce__wrap.is_reverse {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.introduce__item {
+  width: 50%;
+  height: 400px;
+}
+.introduce__item.childImg {
+  background: center no-repeat;
+  background-size: cover;
+}
+.introduce__item.childImg.company01 {background-image: url("../img/company01.jpg");}
+.introduce__item.childImg.company02 {background-image: url("../img/company02.jpg");}
+.introduce__item.childImg.company03 {background-image: url("../img/company03.jpg");}
+
+.introduce__item.childText {
+  height: fit-content;
+  padding: 0 4.5em;
+  margin: auto;
+}
+.introduce__childText__title {
+  font-size: 2.2em;
+  font-weight: 700;
+  line-height: 1.2em;
+  padding-bottom: 1em;
+}
+.introduce__childText__title span {
+  display: inline-block;
+  width: 100%;
+}
+.introduce__childText__content {
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+
+/*---------------------------------------
+  MOBILE RESPONSIVE
+-----------------------------------------*/
+@media (max-width: 1023px) {
+div.intro div.contL {float:none; width:100%; text-align:center; }
+div.intro div.contR {float:none; width:100%;}
+
+/* 반응형 틀어짐 수정 [ssun:20220318] */
+.introduce__wrap {display: block;}
+.introduce__item {
+  width: 100%;
+  height: 25vh;
+}
+.introduce__item.childText {
+  padding: 7vh 3vw;
+  text-align: center;
+}
+.introduce__childText__title {font-size: 1.4em;}
+.introduce__childText__title span {display: inline;}
+.introduce__childText__content {font-size: 1.2em;}
+.introduce__childText__content span {
+  display: block;
+  width: 100%;
+}
+
+}
+@media (max-width: 768px) {
+div.intro div.m_ver{display: block;}
+div.intro div.pc_ver{display: none;}
+div.intro div.contL{height: inherit;}
+div.intro div.contR{height: inherit; padding: 50px 25px;}
+div.intro p.strong{font-size: 25px;}
+div.intro div.m_ver div.img{padding: 0;}
+div.intro div.m_ver div.txt{padding: 50px 25px; text-align: left;}
+div.intro div.m_ver p.strong{font-size: 25px;}
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
+}

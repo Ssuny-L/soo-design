@@ -1,0 +1,100 @@
+<div id="content_tit">
+{{if $get.tit eq "01"}}<!--서브1 제목-->
+<span class="nav1">
+{{if !$get.sub or $get.sub eq "01"}}
+회사소개
+{{elseif $get.sub eq "02"}}
+기업이념
+{{elseif $get.sub eq "04"}}
+공감경영
+{{elseif $get.sub eq "05"}}
+CI/BI
+{{elseif $get.sub eq "03"}}
+찾아오시는길
+{{/if}}
+</span>
+{{elseif $get.tit eq "02"}}<!--서브2 제목-->
+<span class="nav2">
+{{if !$get.sub or $get.sub eq "01"}}
+제조공정
+{{elseif $get.sub eq "02"}}
+공정설비
+{{elseif $get.sub eq ""}}
+사업소개
+{{/if}}
+</span>
+{{elseif $get.tit eq "03"}}<!--서브3 제목-->
+<span class="nav3">
+{{if !$get.sub or $get.com_board_category_code eq "c1"}}
+주요제품
+{{elseif $get.com_board_category_code eq "c2"}}
+이거시김치
+{{elseif $get.com_board_category_code eq "c3"}}
+절임배추
+{{elseif $get.com_board_category_code eq "c4"}}
+우거지
+{{elseif $get.com_board_category_code eq "c5"}}
+무청
+{{elseif $get.com_board_category_code eq "c6"}}
+시래기
+{{/if}}
+</span>
+{{elseif $get.tit eq "04"}}<!--서브4 제목-->
+<span class="nav4">
+{{if !$get.sub or $get.sub eq "01"}}
+고객상담
+{{elseif $get.sub eq "02"}}
+온라인문의
+{{elseif $get.sub eq ""}}
+고객상담
+{{/if}}
+</span>
+{{elseif $get.tit eq "05"}}<!--서브5 제목-->
+<span class="nav5">
+{{if !$get.sub or $get.sub eq "01"}}
+공지사항
+{{elseif $get.sub eq "02"}}
+자주묻는질문
+{{elseif $get.sub eq "03"}}
+갤러리
+{{elseif $get.sub eq "04"}}
+자유게시판
+{{elseif $get.sub eq "05"}}
+대리점안내
+{{/if}}
+</span>
+
+{{elseif $get.tit eq "07"}}<!--서브5 제목-->
+<span class="nav7">
+{{$cate_name}}
+</span>
+
+{{elseif $get.tit eq "06"}}<!--서브6 제목-->
+<span class="nav6">
+{{if !$get.sub or $get.sub eq "01"}}
+회원가입
+{{elseif $get.sub eq "02"}}
+로그인
+{{elseif $get.sub eq "05"}}
+회원정보수정
+{{elseif $get.sub eq "06"}}
+회원탈퇴
+{{elseif $get.sub eq "03"}}
+개인정보처리방침
+{{elseif $get.sub eq "04"}}
+이메일무단수집거부
+{{/if}}
+</span>
+{{/if}}
+<!--마이페이지 제목
+<span>마이페이지</span> <span class="current" style="background:url({{$template}}/img/common/bl_history.gif) left 4px no-repeat;">
+{{if !$get.sub or $get.sub eq "01"}}
+회원정보 수정
+{{elseif $get.sub eq "02"}}
+회원탈퇴
+{{elseif $get.sub eq "03"}}
+문의내역
+{{/if}}
+</span>
+-->
+</div>

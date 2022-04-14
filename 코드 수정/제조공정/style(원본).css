@@ -1,0 +1,31 @@
+#business {width:100%; }
+#business p.txt_big {font-size:35px; text-align:center; line-height:45px; padding-bottom:30px; }
+#business p.txtP {text-align:center; line-height:25px; }
+#business div.icoBox {overflow:hidden; margin:40px 0;}
+#business section {padding:180px 35px 30px 35px; text-align:center; border:1px solid #dfdfdf; border-radius:10px; margin:1% 1%; width:23%; box-sizing:border-box; min-height:300px; float:left; }
+#business section.ico1 {background:url("../img/ico1.png")no-repeat center 40px;}
+#business section.ico2 {background:url("../img/ico2.png")no-repeat center 40px;}
+#business section.ico3 {background:url("../img/ico3.png")no-repeat center 40px;}
+#business section.ico4 {background:url("../img/ico4.png")no-repeat center 40px;}
+#business section.ico5 {background:url("../img/ico5.png")no-repeat center 40px;}
+#business section.ico6 {background:url("../img/ico6.png")no-repeat center 40px;}
+#business section.ico7 {background:url("../img/ico7.png")no-repeat center 40px;}
+#business section.ico8 {background:url("../img/ico8.png")no-repeat center 40px;}
+#business section:hover {background-color:#f5f5f5;}
+
+/*---------------------------------------
+  MOBILE RESPONSIVE              
+-----------------------------------------*/
+@media (max-width: 1023px) {
+#business p.txt_big {font-size:25px; text-align:center; line-height:35px; padding-bottom:30px; }	
+#business section {width:48%;}
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
+}
+

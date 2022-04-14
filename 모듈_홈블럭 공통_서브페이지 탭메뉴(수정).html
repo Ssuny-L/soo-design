@@ -1,0 +1,114 @@
+<link rel="stylesheet" href="{{$template}}/img/hblock/design/submenu/css/style.css">
+<script src="{{$template}}/img/hblock/design/submenu//js/index.js"></script>
+<div id="submenu" class="subMenu">
+  <div class="menufix">
+    <nav class="menu">
+      {{if $get.tit eq "01"}}
+      <!--서브1 메뉴-->
+      <div class="tapMenuWrap">
+        <ul class="tapMenu">
+          <li class="tapMenu__menuItem select{{if $get.sub eq " 01"}}_on{{else}}{{/if}}">
+            <a class="tapMenu__menuItem__link" href="{{$template}}/company/company_1.php?tit=01&sub=01">회사소개</a>
+          </li>
+          <li class="tapMenu__menuItem select{{if $get.sub eq " 02"}}_on{{else}}{{/if}}">
+            <a class="tapMenu__menuItem__link" href="{{$template}}/company/company_2.php?tit=01&sub=2">기업이념</a>
+          </li>
+          <li class="tapMenu__menuItem select{{if $get.sub eq " 04"}}_on{{else}}{{/if}}">
+            <a class="tapMenu__menuItem__link" href="{{$template}}/company/company_4.php?tit=01&sub=04">공감경영</a>
+          </li>
+          <li class="tapMenu__menuItem select{{if $get.sub eq " 05"}}_on{{else}}{{/if}}">
+            <a class="tapMenu__menuItem__link" href="{{$template}}/company/company_5.php?tit=01&sub=05">CI/BI</a>
+          </li>
+          <li class="tapMenu__menuItem select{{if $get.sub eq " 03"}}_on{{else}}{{/if}}">
+            <a class="tapMenu__menuItem__link" href="{{$template}}/company/company_3.php?tit=01&sub=03">오시는 길</a></li>
+        </ul>
+      </div>
+      {{elseif $get.tit eq "02"}}
+      <!--서브2 메뉴-->
+      <div class="tapMenuWrap">
+        <ul class="tapMenu">
+          <li class="tapMenu__menuItem select{{if $get.sub eq " 01"}}_on{{else}}{{/if}}">
+            <a class="tapMenu__menuItem__link" href="{{$template}}/business/business_1.php?tit=02&sub=01">사업분야</a>
+          </li>
+          <li class="tapMenu__menuItem select{{if $get.sub eq " 02"}}_on{{else}}{{/if}}">
+            <a class="tapMenu__menuItem__link" href="{{$template}}/business/business_2.php?tit=02&sub=02">사업안내</a></li>
+        </ul>
+      </div>
+      {{elseif $get.tit eq "03"}}
+      <!--서브3 메뉴-->
+      <div class="tapMenuWrap">
+        <ul class="tapMenu">
+          <li class="tapMenu__menuItem select{{if $get.com_board_category_code eq "c1"}}_on{{else}}{{/if}}">
+            <a class="tapMenu__menuItem__link" href='{{$template}}/product/prod_01.php?tit=03&sub=01&com_board_category_code=c1'>야채가공품</a>
+          </li>
+          <li class="tapMenu__menuItem select{{if $get.com_board_category_code eq "c2"}}_on{{else}}{{/if}}">
+            <a class="tapMenu__menuItem__link" href='{{$template}}/product/prod_02.php?tit=03&sub=01&com_board_category_code=c2'>김치류</a></li>
+        </ul>
+      </div>
+      {{elseif $get.tit eq "04"}}
+      <!--서브4 메뉴-->
+      <div class="tapMenuWrap">
+        <ul class="tapMenu">
+          <li class="tapMenu__menuItem select{{if $get.sub eq " 01"}}_on{{else}}{{/if}}">
+            <a class="tapMenu__menuItem__link" href="{{$template}}/qna/qna_1.php?tit=04&sub=01">고객상담</a>
+          </li>
+          <li class="tapMenu__menuItem select{{if $get.sub eq " 02"}}_on{{else}}{{/if}}">
+            <a class="tapMenu__menuItem__link" href="{{$template}}/qna/qna_2.php?tit=04&sub=02">1:1 문의</a></li>
+        </ul>
+      </div>
+      {{elseif $get.tit eq "05"}}
+      <!--서브5 메뉴-->
+      <div class="tapMenuWrap">
+        <ul class="tapMenu">
+          <li class="tapMenu__menuItem select{{if $get.sub eq " 01"}}_on{{else}}{{/if}}">
+            <a class="tapMenu__menuItem__link" href="{{$template}}/customer/customer_1.php?tit=05&sub=01">공지사항</a>
+          </li>
+          <li class="tapMenu__menuItem select{{if $get.sub eq " 02"}}_on{{else}}{{/if}}">
+            <a class="tapMenu__menuItem__link" href="{{$template}}/qna/qna_1.php?tit=04&sub=01">문의하기</a></li>
+
+        </ul>
+      </div>
+      {{elseif $get.tit eq "07"}}
+      <!--shop 메뉴-->
+      <div class="tapMenuWrap">
+        <ul class="tapMenu">
+          {{$cafe_ecshop_ec_category}}
+        </ul>
+      </div>
+      {{elseif $get.tit eq "06"}}
+      <!--서브6 메뉴-->
+      <div class="tapMenuWrap">
+        <ul class="tapMenu">
+          <li class="tapMenu__menuItem select{{if $get.sub eq " 07"}}_on{{else}}{{/if}}">
+            <a class="tapMenu__menuItem__link" href="{{$template}}/mypage/mypage2.php?tit=06&sub=07&mode=basketList">장바구니</a></li>
+          {{if $use_member == 'Y'}}
+          {{if $member_id}}
+          <li class="tapMenu__menuItem select{{if $get.sub eq " 08"}}_on{{else}}{{/if}}">
+            <a class="tapMenu__menuItem__link" href="{{$template}}/mypage/mypage1.php?tit=06&sub=08">주문조회</a>
+          </li>
+          <li class="tapMenu__menuItem select{{if $get.sub eq " 09"}}_on{{else}}{{/if}}">
+            <a class="tapMenu__menuItem__link" href="{{$template}}/mypage/mypage3.php?tit=06&sub=09&mode=interestList">관심상품</a>
+          </li>
+          <li class="tapMenu__menuItem select{{if $get.sub eq " 05"}}_on{{else}}{{/if}}">
+            <a class="tapMenu__menuItem__link" href="{{$template}}/member/modify.php?tit=06&sub=05">회원정보 수정</a>
+          </li>
+          <li class="tapMenu__menuItem select{{if $get.sub eq " 06"}}_on{{else}}{{/if}}">
+            <a class="tapMenu__menuItem__link" href="{{$template}}/member/secede.php?tit=06&sub=06">회원탈퇴</a></li>
+          {{else}}
+          <li class="tapMenu__menuItem select{{if $get.sub eq " 02"}}_on{{else}}{{/if}}">
+            <a class="tapMenu__menuItem__link" href="{{$template}}/member/login.php?tit=06&sub=02">로그인</a>
+          </li>
+          <li class="tapMenu__menuItem select{{if $get.sub eq " 01"}}_on{{else}}{{/if}}">
+            <a class="tapMenu__menuItem__link" href="{{$template}}/member/join.php?tit=06&sub=01">회원가입</a></li>
+          {{/if}}
+          {{/if}}
+          <!--<li class="select{{if $get.sub eq "03"}}_on{{else}}{{/if}}"><a class="tapMenu__menuItem__link" href="javascript: com_member_find_id()">아이디찾기</a></li>
+<li class="select{{if $get.sub eq "04"}}_on{{else}}{{/if}}"><a class="tapMenu__menuItem__link" href="javascript: com_member_find_pw()">비밀번호찾기</a></li>
+<li class="select{{if $get.sub eq "03"}}_on{{else}}{{/if}}"><a class="tapMenu__menuItem__link" href="{{$template}}/member/personal.php?tit=06&sub=03">개인정보처리방침</a></li>
+<li class="select{{if $get.sub eq "04"}}_on{{else}}{{/if}}"><a class="tapMenu__menuItem__link" href="{{$template}}/member/email.php?tit=06&sub=04">이메일무단수집거부</a></li>-->
+        </ul>
+      </div>
+      {{/if}}
+    </nav>
+  </div>
+</div>
